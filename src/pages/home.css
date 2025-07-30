@@ -1,0 +1,21 @@
+
+.animated-line {
+  width: 0%;
+  height: 4px;
+  background-color: #114491ff;
+  animation: expandFromCenter1 1.2s ease-out forwards;
+  justify-content: center;
+}
+
+@keyframes expandFromCenter1 {
+  0% {
+    width: 0%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  100% {
+    width: 100%;
+    margin-left: 0;
+    transform: translateX(0);
+  }
+}

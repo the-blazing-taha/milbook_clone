@@ -1,0 +1,93 @@
+.footer {
+  background-color: black; /* Darker background */
+  color: white;
+  /* padding: 2rem 0; */
+  font-family: Arial, sans-serif;
+}
+.footer img {
+  width: 100%;
+  max-height: 100px; /* Optional: control height */
+  object-fit: cover;  /* Ensures the image fills the area nicely */
+  display: block;
+}
+
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Allows sections to wrap on smaller screens */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px; /* Ensures sections don't get too squished */
+  margin: 1rem;
+}
+
+.footer-section h4 {
+  margin-bottom: 1rem;
+  color: white; /* React blue-like color for headings */
+}
+
+.footer-section p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #61dafb;
+}
+
+.social-links a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+  color: #61dafb;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  border-top: 1px solid #444;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 2rem;
+  }
+}

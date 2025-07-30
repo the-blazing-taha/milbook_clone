@@ -1,0 +1,36 @@
+.navbar-wrapper {
+  transition: all 0.3s ease;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar-wrapper.expanded {
+  padding: 5px 0;
+}
+
+.navbar-wrapper.shrinked {
+  padding: 5px 0;
+}
+
+.navbar-logo {
+  transition: all 0.3s ease;
+}
+
+.logo-large {
+  width: 290px;
+  height: 60px;
+}
+
+.logo-small {
+  width: 150px;
+  height: 30px;
+}
+.dropdown-title-custom > a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #024FA1 !important; /* Bootstrap primary blue */
+}
+
+.navbar-text{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #024FA1 !important; /* Bootstrap primary blue */
+}
