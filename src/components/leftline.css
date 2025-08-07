@@ -1,0 +1,19 @@
+.animated-line-leftlines {
+ 
+  height: 4px;
+  background-color: #114491ff;
+  animation: expandFromleft 1.2s ease-out forwards;
+  justify-content: left;
+}
+
+@keyframes expandFromleft {
+  0% {
+    width: 0%;
+    margin-left: 10%;
+    transform: translateX(-50%);
+  }
+  100% {
+    width: 100%;
+    transform: translateX(0);
+  }
+}

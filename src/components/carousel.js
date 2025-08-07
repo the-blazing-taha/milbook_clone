@@ -6,10 +6,10 @@ function Carousel1({ images }) {
   return (
     <Carousel fade className="custom-carousel">
       {images.map((image, index) => (
-        <Carousel.Item key={index}>
+        <Carousel.Item key={index} >
           <img
             className="d-block w-100 carousel-img"
-            src='https://www.milbook.pl/wp-content/uploads/2025/02/top-milbook.webp'
+            src='https://aizynq.com/assets/img/hero-bg.jpg'
             alt={image.alt}
           />
           <Carousel.Caption  className="custom-caption">

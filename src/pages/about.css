@@ -1,0 +1,29 @@
+.about-section {
+  background-image: linear-gradient(to bottom, #114491ff 0%, #212529 90%);
+  padding: 50px 0;
+}
+
+.about-title {
+  font-family: Arial, sans-serif;
+}
+
+.about-text {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+
+.about-image {
+  background-color: blue;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.custom-list {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.custom-list li {
+  margin-bottom: 10px;
+}

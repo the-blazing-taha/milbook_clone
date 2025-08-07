@@ -1,5 +1,5 @@
 .milbook-f10-title{
-    font-size: 24px;
+    font-size:14px;
     font-weight: bold;
     color: #ffffff;
     text-align: left;
@@ -17,31 +17,7 @@
     font-size: 20px;
 }
 
-p{
-    font-size: 16px;
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
-ul {
-  max-width: 500px;
-  padding-left: 20px;
-  margin: 0;
-}
-
-ul li {
-  font-size: 16px;
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
-  line-height: 1.2; /* Optional: tighter lines */
-  word-wrap: break-word;
-}
-
-ul li p {
-  margin: 0;
-  padding: 0;
-}
 
 
 .button {
@@ -83,10 +59,6 @@ ul li p {
   right: 0;
 }
 
-p{
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-}
 
 
 .animated-line-milbook10 {
@@ -110,22 +82,3 @@ p{
   }
 }
 
-.animated-line-leftlines {
-  width: 0%;
-  height: 4px;
-  background-color: #114491ff;
-  animation: expandFromleft 1.2s ease-out forwards;
-  justify-content: left;
-}
-
-@keyframes expandFromleft {
-  0% {
-    width: 0%;
-    margin-left: 10%;
-    transform: translateX(-50%);
-  }
-  100% {
-    width: 90%;
-    transform: translateX(0);
-  }
-}

@@ -12,19 +12,19 @@ function Navigationbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsTop(window.scrollY < 50);
+      setIsTop(window.scrollY <= 50);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <div className={`sticky-top navbar-wrapper ${isTop ? "expanded" : "shrinked"}`}>
+    <div expand="lg" className={`sticky-top navbar-wrapper ${isTop ? "expanded" : "shrinked"}`}>
       <Navbar expand="lg" >
-        <Container>
+        <Container >
           <Navbar.Brand as={Link} to="/home">
             <img
-              src="https://milbook.pl/wp-content/uploads/2021/08/milbook.png"
+              src="https://aizynq.com/assets/img/logo.jpeg"
               alt="logo"
               className={`navbar-logo ${isTop ? "logo-large" : "logo-small"}`}
             />
@@ -35,7 +35,7 @@ function Navigationbar() {
               <Nav.Link className="mx-3 navbar-text fw-bold" as={Link} to="/home">Home</Nav.Link>
 
               <NavDropdown
-                  title="Tablets"
+                  title="Products"
                   id="tablets-dropdown"
                   className="mx-3 fw-bold hover-dropdown dropdown-title-custom dropdown-hover"
                 >
@@ -46,7 +46,7 @@ function Navigationbar() {
                   <NavDropdown.Item className="navbar-text" as={Link} to="/milbook-a16">Milbook A16</NavDropdown.Item>
                 </NavDropdown>
 
-              <NavDropdown title="Notebooks" id="notebooks-dropdown" className="mmx-3 fw-bold hover-dropdown dropdown-title-custom dropdown-hover">
+              <NavDropdown title="Services" id="notebooks-dropdown" className="mmx-3 fw-bold hover-dropdown dropdown-title-custom dropdown-hover">
                 <NavDropdown.Item className="navbar-text" as={Link} to="/milbook-f10">Milbook F10</NavDropdown.Item>
                 <NavDropdown.Item className="navbar-text" as={Link} to="/milbook-f20">Milbook F20</NavDropdown.Item>
                 <NavDropdown.Item className="navbar-text" as={Link} to="/milbook-f40">Milbook F40</NavDropdown.Item>
@@ -56,7 +56,7 @@ function Navigationbar() {
 
               <Nav.Link className="mx-1 navbar-text fw-bold" as={Link} to="/gallery">Where to Buy</Nav.Link>
               <Nav.Link className="mx-1 navbar-text fw-bold" as={Link} to="/jobs">Video</Nav.Link>
-              <Nav.Link className="mx-1 navbar-text fw-bold" as={Link} to="/services">Support and Service</Nav.Link>
+              <Nav.Link className="mx-1 navbar-text fw-bold" as={Link} to="/about">About</Nav.Link>
               <Nav.Link className="mx-1 navbar-text fw-bold" as={Link} to="/contact">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>

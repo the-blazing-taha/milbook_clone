@@ -2,20 +2,19 @@ import React from "react";
 import Carousel1 from "../components/carousel";
 import RuggedTabletsSection from "../components/ruggedtables";
 import ApplicationRange from "../components/applicationrange";
-import Middleline from "../components/middleline";
 import "./home.css";
 
 export default function Home() {
   const images_array = [
     {
       alt: "1st Slide",
-      cap1: "MILBOOK fully rugged tablets and notebooks",
-      cap2: "Face extreme environments with strong adaptability, endurance and vitality. They are resistant to strong vibrations, extreme temperatures and wet or dusty weather conditions.",
+      cap1: "Innovation That Powers Tomorrow",
+      cap2: "At AizynQ , our mission is to ensure our customers are always ahead of the curve. We bring innovation to the world’s toughest challenges through customized and affordable embedded solutions. As an innovative company, we prioritize independence, stability, and long-term partnerships.",
     },
     {
       alt: "2nd Slide",
-      cap1: "MILBOOK tablets and notebooks are reliable",
-      cap2: "Warranty confirmed by certificates: MIL-STD-810H and MIL-STD-461G/461F and IP65/67. Their rugged construction and advanced protective features ensure reliability in any situation.",
+      cap1: "AizynQ Mission",
+      cap2: "To drive technological advancements that make life easier, more connected, and sustainable.",
     },
   ];
 
@@ -46,7 +45,7 @@ export default function Home() {
     
     
 
-    <div style={{ backgroundColor: "#08101dff",maxWidth: "100%"}}>
+    <div style={{ backgroundColor: "#08101dff"}}>
       <Carousel1 images={images_array} />
       <div style={{ backgroundColor: "black", padding: "1px 0" }}>
         <div
@@ -72,7 +71,19 @@ export default function Home() {
           }}
         ></div>
       </div>
-          <Middleline />
+              <div style={{ backgroundColor: "#08101dff", padding: "1px 0",height: "4px" }}>
+        <div
+          style={{
+            maxWidth: "100%",
+            margin: "0 auto",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <div className="animated-line"></div>
+        </div>
+      </div>
       <div style={{ backgroundColor: "#08101dff", padding: "3px 0" }}>
         <div
           style={{
@@ -88,5 +99,6 @@ export default function Home() {
       <RuggedTabletsSection />
       <ApplicationRange images={app_ranges} />
    </div>
+   
   );
 }

@@ -1,10 +1,10 @@
-.captionStyle  {
+/* .captionStyle  {
   backgroundColor: 'rgba(0, 0, 0, 0.5)';
   padding: '1rem';
   borderRadius: '10px';
   backdropFilter: 'blur(5px)';
   color: 'white';
-}
+} */
 .carousel-img {
   height: 500px;
   object-fit: cover;

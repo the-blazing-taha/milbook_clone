@@ -1,14 +1,15 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import { MDBIcon } from "mdb-react-ui-kit";
+import Middleline from "./middleline";
 
 export default function ApplicationRange({ images }) {
   return (
     <section
       className="application-range-section"
-      style={{ backgroundColor: "#212529" }}
+      style={{maxWidth:"100%",  backgroundColor: "#212529",padding: "0 70px 0",  }}
     >
-      <Container>
+     
         <Row className="g-3">
           {/* Section heading */}
           <Col xs={12}>
@@ -37,7 +38,7 @@ export default function ApplicationRange({ images }) {
 
          
           {images.map((image, index) => (
-            <Col key={index} xs={12} sm={6} md={4} lg={3}>
+            <Col key={index} xs={12} sm={4} md={4} lg={3}>
               <div
                 style={{
                   display: "flex",
@@ -72,17 +73,7 @@ export default function ApplicationRange({ images }) {
           ))}
 
           {/* Bottom blue line */}
-          <Col xs={12}>
-            <div
-              style={{
-                marginTop: "40px",
-                height: "2px",
-                backgroundColor: "#114491ff",
-                maxWidth: "100%",
-              }}
-              className="animated-line"
-            ></div>
-          </Col>
+         <Middleline/>
 
           {/* Contact text + icon */}
           <Col xs={12}>
@@ -122,7 +113,6 @@ export default function ApplicationRange({ images }) {
             </div>
           </Col>
         </Row>
-      </Container>
     </section>
   );
 }

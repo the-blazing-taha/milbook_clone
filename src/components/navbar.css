@@ -17,13 +17,13 @@
 }
 
 .logo-large {
-  width: 290px;
-  height: 60px;
+  width: 160px;
+  height: 80px;
 }
 
 .logo-small {
-  width: 150px;
-  height: 30px;
+  width: 90px;
+  height: 40px;
 }
 .dropdown-title-custom > a {
   font-family: Arial, Helvetica, sans-serif;

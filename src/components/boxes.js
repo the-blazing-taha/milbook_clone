@@ -11,16 +11,18 @@ export default function Boxes() {
           </div>
         </div>
         <div className="contact-box">
-          <div className="box-title">Phone / Fax</div>
+          <div className="box-title">LinkedIn</div>
           <div className="box-content">
             <p>Tel.: +48 22 613 04 87</p>
             <p>Fax: +48 22 613 06 12</p>
           </div>
         </div>
         <div className="contact-box">
-          <div className="box-title">E-mail</div>
+          <div className="box-title">E-mail Us</div>
           <div className="box-content">
-            <p>info@milbook.pl</p>
+            <p>info@aizynq.com</p>
+            <p>hamza@aizynq.com</p>
+            <p>support@aizynq.com</p>
           </div>
         </div>
       </div>

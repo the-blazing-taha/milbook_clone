@@ -10,7 +10,9 @@
   object-fit: cover;  /* Ensures the image fills the area nicely */
   display: block;
 }
-
+.bullet{
+  color: #a2cce3;
+}
 
 .footer-content {
   display: flex;
@@ -29,7 +31,7 @@
 
 .footer-section h4 {
   margin-bottom: 1rem;
-  color: white; /* React blue-like color for headings */
+  color: #a2cce3; /* React blue-like color for headings */
 }
 
 .footer-section p {
@@ -90,4 +92,38 @@
   .footer-section {
     margin-bottom: 2rem;
   }
+}
+
+.social-icons-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  
+}
+
+.social-icons li svg {
+  fill: white;
+  transition: transform 0.2s ease;
+}
+
+.social-icons li svg:hover {
+  transform: scale(1.2);
+  fill: #0d6efd; /* Optional: Hover color */
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Optional: give it a height */
+  height: 70px;
+}
+
+.copyright {
+  text-align: center;
 }
