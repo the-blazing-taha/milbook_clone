@@ -6,6 +6,7 @@ import About from "./pages/about";
 import Header from "./components/header";
 import Milbook from "./pages/milbbookf10";
 import Contact from "./pages/contact";
+import Services from "./pages/services";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/m1" element={<Milbook />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
