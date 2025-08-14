@@ -19,7 +19,7 @@ function Navigationbar() {
   }, []);
 
   return (
-    <div expand="lg" className={`sticky-top navbar-wrapper ${isTop ? "expanded" : "shrinked"}`}>
+    <div style={{maxWidth:"100%"}} expand="lg" className={`sticky-top navbar-wrapper ${isTop ? "expanded" : "shrinked"}`}>
       <Navbar expand="lg" >
         <Container >
           <Navbar.Brand as={Link} to="/home">
@@ -47,7 +47,7 @@ function Navigationbar() {
                 </NavDropdown>
 
               <NavDropdown title="Services" id="notebooks-dropdown" className="mmx-3 fw-bold hover-dropdown dropdown-title-custom dropdown-hover">
-                <NavDropdown.Item className="navbar-text" as={Link} to="/milbook-f10">Milbook F10</NavDropdown.Item>
+                <NavDropdown.Item className="navbar-text" as={Link} to="/services">Milbook F10</NavDropdown.Item>
                 <NavDropdown.Item className="navbar-text" as={Link} to="/milbook-f20">Milbook F20</NavDropdown.Item>
                 <NavDropdown.Item className="navbar-text" as={Link} to="/milbook-f40">Milbook F40</NavDropdown.Item>
                 <NavDropdown.Item className="navbar-text" as={Link} to="/milbook-a81">Milbook A81</NavDropdown.Item>
