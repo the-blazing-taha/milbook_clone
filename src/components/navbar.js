@@ -40,7 +40,7 @@ function Navigationbar() {
                   className="mx-3 fw-bold hover-dropdown dropdown-title-custom dropdown-hover"
                 >
                   <NavDropdown.Item className="navbar-text" as={Link} to="/m1">Milbook F10</NavDropdown.Item>
-                  <NavDropdown.Item className="navbar-text" as={Link} to="/milbook-f20">Milbook F20</NavDropdown.Item>
+                  <NavDropdown.Item className="navbar-text" as={Link} to="/azr_nova">AZR Nova</NavDropdown.Item>
                   <NavDropdown.Item className="navbar-text" as={Link} to="/milbook-f40">Milbook F40</NavDropdown.Item>
                   <NavDropdown.Item className="navbar-text" as={Link} to="/milbook-a81">Milbook A81</NavDropdown.Item>
                   <NavDropdown.Item className="navbar-text" as={Link} to="/milbook-a16">Milbook A16</NavDropdown.Item>

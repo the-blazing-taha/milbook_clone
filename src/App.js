@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import About from "./pages/about";
 import Header from "./components/header";
-import Milbook from "./pages/milbbookf10";
+import Milbook, {AZR_Nova} from "./pages/milbbookf10";
 import Contact from "./pages/contact";
 
 function App() {
@@ -19,6 +19,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/m1" element={<Milbook />} />
           <Route path="/contact" element={<Contact />} />
+            <Route path="/azr_nova" element={<AZR_Nova />} />
+
         </Routes>
         <Footer />
       </BrowserRouter>
