@@ -1,6 +1,7 @@
 import "./milbookf10.css";
 import { Row } from "react-bootstrap";
 import Middleline from "../components/middleline";
+import nova from '../pictures/azr_nova.png';
 
 import ProductDescription from "../components/productDescription";
 
@@ -240,46 +241,18 @@ export function AZR_Nova() {
     const features = [
         [
             {
-                f1: "The Destiny 2 Build Recommendation System stands as an AI-powered solution designed to elevate the gameplay experience for Destiny 2 enthusiasts. It serves as a guiding beacon, offering personalized build suggestions meticulously tailored to optimize player performance across diverse in-game activities.",
-                listtype: "none",
-                title:"Tailored Build Recommendations for Destiny 2 Players"
+                f1: "Processing Core: Zynq 7000 (dual-core ARM + FPGA).",
+                f2: "RF Front-End:2 x Transmit Channels",
+                f3: "2 x Receive Channels",
+                f4: "Frequency Range: 70 MHz – 6 GHz",
+                f5: "Interfaces: Gigabit Ethernet",
+                f6:"Boot Mode: JTAG, Flash",
+                f7:"GPS Module: Integrated for time synchronization",
+                f8:"Software Support: Customizable FPGA bitstream with bare metal SDDK code in C",
+                f9:"Form Factor: Compact",
+                f10:"Power Supply: 12V DC/5V DC",
+                title:"Features"
             }
-        ],
-        [
-            {
-                f1: "At its core, the system meticulously dissects the myriad permutations of exotic armor, along with exotic and legendary weapons—scrutinizing their diverse array of perks and attributes. This granular analysis forms the foundation for crafting optimized combinations, ensuring players harness the full potential of their gear arsenal.",
-                listtype: "none",
-                title:"Analyzing Gear and Perks for Precision:"
-            }
-        ],
-        [
-            {
-                f1: "The system's prowess extends beyond mere recommendations; it endeavors to align with players' preferences and gameplay styles. By deciphering preferred playstyles and in-game activities, it tailors its suggestions, resonating with individual gaming inclinations.",
-                listtype: "none",
-                title:"Player-Centric Customization"
-            },
-        ],
-        [
-            {
-                f1: "Efficiency and Effectiveness: By curating optimized builds, the system empowers players with loadouts finely tuned for maximum efficiency and effectiveness in various in-game scenarios.",
-                f2: "Enhanced Player Agency: Offering tailored suggestions based on individual preferences amplifies player agency, fostering a sense of ownership over their gameplay experience.",
-                f3: "Streamlined Decision-Making: Simplifying the complex process of selecting gear combinations streamlines decision-making, enabling players to focus more on gameplay strategies.",
-                title:"Elevating the Gameplay Experience"
-            },
-        ],
-        [
-            {
-                f1: "Augmenting Player Engagement: It serves as a catalyst, invigorating player engagement by optimizing gear choices and amplifying the joy of experimentation.",
-                f2: "Community Empowerment: Beyond individual gameplay, it fosters a communal ecosystem, encouraging knowledge-sharing and camaraderie among Destiny 2 enthusiasts.",
-                title:"Enriching the Destiny 2 Universe:"
-            },
-        ],
-        [
-            {
-                f1: "In essence, this system stands as a beacon of precision and personalization within the Destiny 2 cosmos, offering players not just recommendations but a gateway to a more immersive and empowered gaming experience.",
-                listtype: "none",
-                title:"Conclusion"
-            },
         ],
     ];
     const images = [
@@ -336,20 +309,20 @@ export function AZR_Nova() {
                 }}
             >
                 <h1 className="milbook-f10-title" style={{ fontSize: "26px" }}>
-                    Tablet <b>Milbook F10</b>, 10.1 inch Rugged Tablet
+                    Custom SDR AZR Nova 2060 with Zynq 7000 FPGA and AD9361 (2Tx, 2Rx)
                 </h1>
-                <p className="milbook-f10-description">
-                    MILBOOK are durable and extremely efficient, portable, rugged
-                    computers designed for hard work in outdoor and industrial
-                    environment.
-                </p>
+                {/*<p className="milbook-f10-description">*/}
+                {/*    MILBOOK are durable and extremely efficient, portable, rugged*/}
+                {/*    computers designed for hard work in outdoor and industrial*/}
+                {/*    environment.*/}
+                {/*</p>*/}
 
                 <div className="row align-items-center flex-md-row-reverse">
                     <div className="col-md-6 text-center">
                         <img
                             style={{ width: "70%", maxWidth: "600px" }}
                             className="img-fluid"
-                            src="https://www.milbook.pl/wp-content/uploads/2025/01/notebook-milbook-R14.webp"
+                            src={nova}
                             alt="Rugged Notebook"
                             onError={(e) => {
                                 e.target.onerror = null;
@@ -357,8 +330,8 @@ export function AZR_Nova() {
                                     "https://placehold.co/600x400/666666/FFFFFF?text=Image+Not+Found";
                             }}
                         />
-                        <ProductDescription description={features[3][0]} />
-                        <ProductDescription description={features[4][0]} />
+                        {/*<ProductDescription description={features[3][0]} />*/}
+                        {/*<ProductDescription description={features[4][0]} />*/}
                     </div>
 
                     <div
@@ -367,9 +340,9 @@ export function AZR_Nova() {
                     >
 
                         <ProductDescription description={features[0][0]} />
-                        <ProductDescription description={features[1][0]} />
-                        <ProductDescription description={features[2][0]} />
-                        <ProductDescription description={features[5][0]} />
+                        {/*<ProductDescription description={features[1][0]} />*/}
+                        {/*<ProductDescription description={features[2][0]} />*/}
+                        {/*<ProductDescription description={features[5][0]} />*/}
 
 
                         <button className="button">
