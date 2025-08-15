@@ -1,6 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './carousle.css'; // custom CSS for arrow & indicator styling
+import hero_bg from '../pictures/hero_bg.jpg';
 
 function Carousel1({ images }) {
   return (
@@ -9,7 +10,7 @@ function Carousel1({ images }) {
         <Carousel.Item key={index} >
           <img
             className="d-block w-100 carousel-img"
-            src='https://aizynq.com/assets/img/hero-bg.jpg'
+            src={hero_bg}
             alt={image.alt}
           />
           <Carousel.Caption  className="custom-caption">

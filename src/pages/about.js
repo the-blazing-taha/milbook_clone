@@ -1,4 +1,5 @@
 import "./about.css";
+import logo from '../pictures/logo.png';
 
 const About = () => {
   return (
@@ -14,7 +15,7 @@ const About = () => {
           <div className="col-md-6 text-center">
             <img
               className="img-fluid about-image"
-              src="https://placehold.co/600x400/666666/FFFFFF?text=Image+Not+Found"
+              src={logo}
               alt="Visual representation of embedded systems"
               onError={(e) => {
                 e.target.onerror = null;

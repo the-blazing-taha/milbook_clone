@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./navbar.css"; // ⬅️ for custom styles
+import logo from '../pictures/logo.png';
 
 function Navigationbar() {
   const [isTop, setIsTop] = useState(true);
@@ -20,11 +21,11 @@ function Navigationbar() {
 
   return (
     <div style={{maxWidth:"100%"}} expand="lg" className={`sticky-top navbar-wrapper ${isTop ? "expanded" : "shrinked"}`}>
-      <Navbar expand="lg" >
+      <Navbar expand="lg" className="sticky-top">
         <Container >
           <Navbar.Brand as={Link} to="/home">
             <img
-              src="https://aizynq.com/assets/img/logo.jpeg"
+              src={logo}
               alt="logo"
               className={`navbar-logo ${isTop ? "logo-large" : "logo-small"}`}
             />
@@ -39,23 +40,23 @@ function Navigationbar() {
                   id="tablets-dropdown"
                   className="mx-3 fw-bold hover-dropdown dropdown-title-custom dropdown-hover"
                 >
-                  <NavDropdown.Item className="navbar-text" as={Link} to="/m1">Milbook F10</NavDropdown.Item>
+                  <NavDropdown.Item className="navbar-text" as={Link} to="/m1">Software Defined Product</NavDropdown.Item>
                   <NavDropdown.Item className="navbar-text" as={Link} to="/azr_nova">AZR Nova</NavDropdown.Item>
-                  <NavDropdown.Item className="navbar-text" as={Link} to="/milbook-f40">Milbook F40</NavDropdown.Item>
-                  <NavDropdown.Item className="navbar-text" as={Link} to="/milbook-a81">Milbook A81</NavDropdown.Item>
-                  <NavDropdown.Item className="navbar-text" as={Link} to="/milbook-a16">Milbook A16</NavDropdown.Item>
+                  <NavDropdown.Item className="navbar-text" as={Link} to="/sob">System on board</NavDropdown.Item>
+                  <NavDropdown.Item className="navbar-text" as={Link} to="/customized_platform">Customized Platforms</NavDropdown.Item>
+                  {/*<NavDropdown.Item className="navbar-text" as={Link} to="/milbook-a16">Milbook A16</NavDropdown.Item>*/}
                 </NavDropdown>
 
               <NavDropdown title="Services" id="notebooks-dropdown" className="mmx-3 fw-bold hover-dropdown dropdown-title-custom dropdown-hover">
-                <NavDropdown.Item className="navbar-text" as={Link} to="/services">Milbook F10</NavDropdown.Item>
-                <NavDropdown.Item className="navbar-text" as={Link} to="/milbook-f20">Milbook F20</NavDropdown.Item>
-                <NavDropdown.Item className="navbar-text" as={Link} to="/milbook-f40">Milbook F40</NavDropdown.Item>
-                <NavDropdown.Item className="navbar-text" as={Link} to="/milbook-a81">Milbook A81</NavDropdown.Item>
-                <NavDropdown.Item className="navbar-text" as={Link} to="/milbook-a16">Milbook A16</NavDropdown.Item>
+                <NavDropdown.Item className="navbar-text" as={Link} to="/services">Schematic Designs</NavDropdown.Item>
+                <NavDropdown.Item className="navbar-text" as={Link} to="/service2">Trainings</NavDropdown.Item>
+                {/*<NavDropdown.Item className="navbar-text" as={Link} to="/milbook-f40">Milbook F40</NavDropdown.Item>*/}
+                {/*<NavDropdown.Item className="navbar-text" as={Link} to="/milbook-a81">Milbook A81</NavDropdown.Item>*/}
+                {/*<NavDropdown.Item className="navbar-text" as={Link} to="/milbook-a16">Milbook A16</NavDropdown.Item>*/}
               </NavDropdown>
 
-              <Nav.Link className="mx-1 navbar-text fw-bold" as={Link} to="/gallery">Where to Buy</Nav.Link>
-              <Nav.Link className="mx-1 navbar-text fw-bold" as={Link} to="/jobs">Video</Nav.Link>
+              {/*<Nav.Link className="mx-1 navbar-text fw-bold" as={Link} to="/gallery">Where to Buy</Nav.Link>*/}
+              {/*<Nav.Link className="mx-1 navbar-text fw-bold" as={Link} to="/jobs">Video</Nav.Link>*/}
               <Nav.Link className="mx-1 navbar-text fw-bold" as={Link} to="/about">About</Nav.Link>
               <Nav.Link className="mx-1 navbar-text fw-bold" as={Link} to="/contact">Contact</Nav.Link>
             </Nav>

@@ -17,13 +17,14 @@
 }
 
 .logo-large {
-  width: 160px;
-  height: 80px;
+  width: 130px;
+  height: 100px;
+    margin: 0 auto;
 }
 
 .logo-small {
   width: 90px;
-  height: 40px;
+  height: 60px;
 }
 .dropdown-title-custom > a {
   font-family: Arial, Helvetica, sans-serif;
@@ -34,3 +35,24 @@
   font-family: Arial, Helvetica, sans-serif;
   color: #024FA1 !important; /* Bootstrap primary blue */
 }
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: white; /* Match your theme color */
+        padding: 1rem;
+    }
+    .navbar-nav .nav-link {
+        color: #024FA1 !important;
+    }
+    .dropdown-menu {
+        background-color: white;
+        border: none;
+    }
+    .dropdown-menu .dropdown-item {
+        color: white !important;
+    }
+    .dropdown-menu .dropdown-item:hover {
+        background-color: rgb(0, 18, 114);
+    }
+}
+

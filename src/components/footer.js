@@ -42,19 +42,19 @@ function Footer() {
           <ul>
             <li>
               <span className="bullet">&#129170;</span>
-              <a href="/home"> Schematic Design</a>
+              <a href="#notdecided"> Schematic Design</a>
             </li>
             <li>
               <span className="bullet">&#129170;</span>
-              <a href="/about"> PCB Layout Design</a>
+              <a href="#notdecided"> PCB Layout Design</a>
             </li>
             <li>
               <span className="bullet">&#129170;</span>
-              <a href="/services"> System Bring Up</a>
+              <a href="#notdecided"> System Bring Up</a>
             </li>
             <li>
               <span className="bullet">&#129170;</span>
-              <a href="/tos"> Graphical User Interface</a>
+              <a href="#notdecided"> Graphical User Interface</a>
             </li>
           </ul>
         </div>
@@ -74,7 +74,7 @@ function Footer() {
         <div className="footer-section social">
           <h4>About AizynQ</h4>
           <p>
-            Aizynq was established in 2022 by a team of experienced engineers
+              AizynQ was established in 2022 by a team of experienced engineers
             driven by innovation. We transform industry needs into practical
             solutions by seamlessly integrating software and hardware, bringing
             new ideas to life through cutting-edge embedded technology.

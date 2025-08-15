@@ -21,7 +21,7 @@ export default function Header() {
             }}
           >
             <span style={{ display: 'inline-block', verticalAlign: 'middle',  }}>📞</span>
-            +48 22 513 04 13
+            +92 33 333 33 33
           </p>
           <p
             style={{
@@ -32,7 +32,7 @@ export default function Header() {
             }}
           >
             <span style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '5px' }}>✉️</span>
-            info@millice.pl
+              info@aizynq.com
           </p>
         </div>
       </header>

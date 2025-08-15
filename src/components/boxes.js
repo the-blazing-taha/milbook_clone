@@ -4,25 +4,21 @@ export default function Boxes() {
   return (
     <div className="contact-boxes-container">
         <div className="contact-box">
-          <div className="box-title">AP-FLYER Sp. z o.o.</div>
+          <div className="box-title">Information</div>
           <div className="box-content">
-            <p>Żegańska 2D St.</p>
-            <p>04-713 Warsaw, Poland</p>
+              <p>info@aizynq.com</p>
           </div>
         </div>
         <div className="contact-box">
-          <div className="box-title">LinkedIn</div>
+          <div className="box-title">Support</div>
           <div className="box-content">
-            <p>Tel.: +48 22 613 04 87</p>
-            <p>Fax: +48 22 613 06 12</p>
+              <p>support@aizynq.com</p>
           </div>
         </div>
         <div className="contact-box">
-          <div className="box-title">E-mail Us</div>
+          <div className="box-title">Manager</div>
           <div className="box-content">
-            <p>info@aizynq.com</p>
             <p>hamza@aizynq.com</p>
-            <p>support@aizynq.com</p>
           </div>
         </div>
       </div>

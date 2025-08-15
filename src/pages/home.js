@@ -42,8 +42,6 @@ export default function Home() {
   ];
 
   return (
-    
-    
 
     <div style={{ backgroundColor: "#08101dff"}}>
       <Carousel1 images={images_array} />
@@ -97,7 +95,8 @@ export default function Home() {
       </div>
       
       <RuggedTabletsSection />
-      <ApplicationRange images={app_ranges} />
+      {/*<ApplicationRange images={app_ranges} />*/}
+
    </div>
    
   );

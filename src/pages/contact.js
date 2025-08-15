@@ -12,7 +12,7 @@ export default function Contact() {
         className="contact-header"
       >
         <strong className="contact-title" style={{ color:"white",fontSize: "30px" }}>
-          MILBOOK Tablets & Notebooks
+          AizynQ Systems
         </strong>
         <p>Distribution and service:</p>
       </div>

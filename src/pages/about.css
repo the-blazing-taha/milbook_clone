@@ -1,6 +1,6 @@
 .about-section {
   background-image: linear-gradient(to bottom, #114491ff 0%, #212529 90%);
-  padding: 50px 0;
+  padding: 60px 50px;
 }
 
 .about-title {
@@ -13,7 +13,7 @@
 }
 
 .about-image {
-  background-color: blue;
+
   max-width: 100%;
   height: auto;
   border-radius: 5px;
